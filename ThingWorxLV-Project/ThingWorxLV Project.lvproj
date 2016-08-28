@@ -31,7 +31,7 @@
 	</Item>
 	<Item Name="rio1" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">rio1</Property>
-		<Property Name="alias.value" Type="Str">172.22.11.2</Property>
+		<Property Name="alias.value" Type="Str">130.64.190.227</Property>
 		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,ARM;DeviceCode,762F;TARGET_TYPE,RT;FPGAPersonality,myRIO_FP_Default;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">762F</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>
@@ -108,13 +108,8 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="Sub VIs" Type="Folder">
-			<Item Name="GetProperties.vi" Type="VI" URL="../../Sub VIs/GetProperties.vi"/>
-			<Item Name="ParseGetRequest.vi" Type="VI" URL="../../Sub VIs/ParseGetRequest.vi"/>
-			<Item Name="SendPropertyValues.vi" Type="VI" URL="../../Sub VIs/SendPropertyValues.vi"/>
-			<Item Name="SetService.vi" Type="VI" URL="../../Sub VIs/SetService.vi"/>
-			<Item Name="ThingWorxInit.vi" Type="VI" URL="../../Sub VIs/ThingWorxInit.vi"/>
-			<Item Name="ThingWorxResponseErrorCatcher.vi" Type="VI" URL="../../Sub VIs/ThingWorxResponseErrorCatcher.vi"/>
+		<Item Name="Sub VIs" Type="Folder" URL="../../Sub VIs">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="ThingWorxmyRio.vi" Type="VI" URL="../../ThingWorxmyRio.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -204,8 +199,6 @@ AddOutputFilter chunkFilter
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="ServiceSendProperties.vi" Type="VI" URL="../../Sub VIs/ServiceSendProperties.vi"/>
-			<Item Name="SetServiceClusterInputs.vi" Type="VI" URL="../../Sub VIs/SetServiceClusterInputs.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="My Real-Time Application" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
