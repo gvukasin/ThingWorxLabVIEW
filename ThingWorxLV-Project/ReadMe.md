@@ -1,4 +1,4 @@
-This is a myRIO project that uses the VI's in the previous folder (i.e. SetService.vi, GetProperties.vi, and GetPropertyValues.vi) to send and receive information from a ThingWorx server. In order to use this project, complete the following steps. <br>
+This is a myRIO project that uses the VI's in the previous folder (i.e. SetService.vi, GetProperties.vi, and SetProperty.vi) to send and receive information from a ThingWorx server. In order to use this project, complete the following steps. <br>
 1. Download the myRIO software bundle for your version of LabVIEW, if you do not already have it (For LabVIEW 2015: <a href ="http://www.ni.com/download/ni-myrio-software-2015/5727/en/">http://www.ni.com/download/ni-myrio-software-2015/5727/en/</a> ). <br>
 2. Download the "HTTP Client" library on the myRIO using the NI Max (NI Measurement & Automation Explorer) program. <br>
       &nbsp;&nbsp;&nbsp;&nbsp; i. Find your myRIO after expanding the "Remote Systems" tab in the tree on the left of the NI MAX user interface. <br>
@@ -9,5 +9,8 @@ This is a myRIO project that uses the VI's in the previous folder (i.e. SetServi
 3. You have the correct software on your myRIO, open the project "ThingWorxLV Project.lvproj." <br>
 4. Change the IP address to that of your myRIO by right clicking on the myRIO icon in the project menu and selecting "Properties." <br>
 5. Then make sure you can connect to your myRIO. <br>
-6. Now create a ThingTemplate in ThingWorx. <br>
-7. 
+6. Now create a Thing using a RemoteThingTemplate in ThingWorx. <br>
+7. Add your desired properties to your Thing under the "Properties" tab of your Thing. <br>
+8. Create a Service by following the steps under the "POST Request" heading at: <a  href = https://sites.google.com/site/thingworxlabviewdocumentation/home/getting-started-in-thingworx> https://sites.google.com/site/thingworxlabviewdocumentation/home/getting-started-in-thingworx</a>. <br>
+9. Change the permissions of your ThingWorx server using the directions below the service creation directions from the above link. 
+10. Open the project, connect your myRIO to it and run "ThingWorxmyRio.vi".
