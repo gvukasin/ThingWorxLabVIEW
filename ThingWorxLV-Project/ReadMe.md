@@ -12,5 +12,5 @@ This is a myRIO project that uses the VI's in the previous folder (i.e. SetServi
 6. Now create a Thing using a RemoteThingTemplate in ThingWorx. <br>
 7. Add your desired properties to your Thing under the "Properties" tab of your Thing. <br>
 8. Create a Service by following the steps under the "POST Request" heading at: <a  href = https://sites.google.com/site/thingworxlabviewdocumentation/home/getting-started-in-thingworx> https://sites.google.com/site/thingworxlabviewdocumentation/home/getting-started-in-thingworx</a>. <br>
-9. Change the permissions of your ThingWorx server using the directions below the service creation directions from the above link. 
-10. Open the project, connect your myRIO to it and run "ThingWorxmyRio.vi".
+9. Change the permissions of your ThingWorx server using the directions below the service creation directions from the above link. <br>
+10. Open the project, connect your myRIO to it and run "ThingWorxmyRio.vi". <br>
